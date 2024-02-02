@@ -1,0 +1,41 @@
+.nav{
+    @apply 
+    sticky 
+    top-0 
+    w-full 
+    bg-slate-200 
+    z-30 
+    shadow-sm
+}
+.container_nav{
+    @apply
+    py-4 border-b-[1px]
+}
+
+.components_nav{
+    @apply
+    flex
+    items-center
+    justify-between
+    gap-3
+}
+
+.search_nav{
+    display: flex;
+    flex-flow: row wrap;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(181,152,180, 0.3);
+    width: 20rem;
+    align-content: center;
+    justify-content: center;
+}
+.search_bar{
+    @apply flex;
+    border: none;
+    border-radius: 50px;
+    background-color:transparent;
+}
+input::placeholder{
+    color: var(--primary-black-purple);
+ }

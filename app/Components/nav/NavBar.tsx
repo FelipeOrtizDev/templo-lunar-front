@@ -1,34 +1,26 @@
 import Link from "next/link";
 import Container from "../Container";
-import { Redressed } from "next/font/google";
+import './NavBar.css'
+import { FaSearch } from "react-icons/fa";
 
-const redressed = Redressed({ subsets: [ "latin"], 
-weight: ["400"] });
+
+
 
 const NavBar = () => {
     return (
         <>
-            <div className="
-            sticky 
-            top-0 
-            w-full 
-            bg-slate-200 
-            z-30 
-            shadow-sm">
-                <div className="py-4 border-b-[1px]">
+            <div className="nav">
+                <div className="container_nav">
                     <Container>
-                        <div className="
-                        flex
-                        items-center
-                        justify-between
-                        gap-3
-                        md-gap-0
-                        ">
-                            <Link href="/" className={`${redressed.className} font-bold text-2x2`}>
+                        <div className="components_nav md-gap-0">
+                            <Link href="/" className="font-mango">
                                 E-shop
                             </Link>
-                            <div className="hidden md:block">
-                                search
+                            <div className="search_nav hidden md:block">
+                                <input className="search_bar" type="text" placeholder="O que você procura?"></input>
+                                <button>
+                                <FaSearch></FaSearch>
+                                </button>   
                             </div>
                             <div className="flex items-center gap-8 md-gap-12">
                                 <div>CartCount</div>
